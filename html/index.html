@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anti-Bookstore | Home</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<header>
+  <nav class="navbar">
+    <h2>Anti-Bookstore</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="marketplace.html">Marketplace</a>
+      <a href="sell.html">Sell</a>
+      <a href="login.html">Login</a>
+      <button onclick="toggleDark()" class="dark-btn">🌙</button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Buy & Sell Used College Items</h1>
+    <p>Textbooks, lab coats & clickers inside your campus</p>
+    <a href="marketplace.html" class="btn big-btn">Explore Marketplace</a>
+  </div>
+</section>
+
+
+<!-- ===== Categories ===== -->
+<section class="categories">
+  <h2>Browse by Category</h2>
+
+  <div class="category-list">
+    <div class="card category-card">
+      <div class="icon">📘</div>
+      <h3>Textbooks</h3>
+      <p>Find affordable used textbooks for your semester.</p>
+    </div>
+
+    <div class="card category-card">
+      <div class="icon">🥼</div>
+      <h3>Lab Coats</h3>
+      <p>Buy or sell lab coats in good condition.</p>
+    </div>
+
+    <div class="card category-card">
+      <div class="icon">🎛</div>
+      <h3>Clickers</h3>
+      <p>Get classroom clickers without paying full price.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How it Works ===== -->
+<section class="info">
+  <h2>How It Works</h2>
+
+  <div class="steps">
+    <div class="step card">
+      <span class="step-number">1</span>
+      <h3>Login</h3>
+      <p>Sign in using your campus account to get started.</p>
+    </div>
+
+    <div class="step card">
+      <span class="step-number">2</span>
+      <h3>Browse or Sell</h3>
+      <p>Explore available items or post what you want to sell.</p>
+    </div>
+
+    <div class="step card">
+      <span class="step-number">3</span>
+      <h3>Connect</h3>
+      <p>Contact the seller directly and close the deal.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>© 2026 Anti-Bookstore</p>
+</footer>
+<script>
+  function toggleDark() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+
+</body>
+</html>

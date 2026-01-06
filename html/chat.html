@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat | Anti-Bookstore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Anti-Bookstore</h2>
+  <a href="marketplace.html">Back to Marketplace</a>
+</nav>
+
+<section class="chat-container">
+
+  <div class="chat-header">
+    <h3>Chat with Seller</h3>
+    <p id="sellerEmail"></p>
+  </div>
+
+  <div class="chat-messages" id="messages"></div>
+
+  <form class="chat-input" id="chatForm">
+    <input type="text" id="messageInput" placeholder="Type your message..." required>
+    <button type="submit" class="btn">Send</button>
+  </form>
+
+</section>
+
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/authCheck.js"></script>
+<script type="module" src="../js/chat.js"></script>
+
+</body>
+</html>

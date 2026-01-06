@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: anti-bookstore
+    env: static
+    staticPublishPath: .

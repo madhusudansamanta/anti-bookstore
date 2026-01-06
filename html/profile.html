@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | Anti-Bookstore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+  <h2>Anti-Bookstore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+
+    <!-- Sell (only logged-in users) -->
+    <a href="sell.html" id="sellLink">Sell</a>
+    <a href="inbox.html">Inbox</a>
+
+
+    <!-- Login (only logged-out users) -->
+    <a href="login.html" id="loginLink">Login</a>
+
+    <!-- Logout (only logged-in users) -->
+    <a href="#" id="logoutBtn" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+
+
+<!-- ===== Profile Section ===== -->
+<section class="profile-section">
+
+  <!-- User Info -->
+  <div class="profile-card">
+    <div class="avatar">👤</div>
+    <h2>Student Name</h2>
+    <p><strong>Campus:</strong> Your College Name</p>
+    <p><strong>Email:</strong> student@college.edu</p>
+
+    <button class="btn">Edit Profile</button>
+    <button class="btn secondary">Logout</button>
+  </div>
+  <div class="profile-card">
+  <h3>Payment Requests</h3>
+  <div id="paymentRequests"></div>
+</div>
+
+
+  <!-- My Listings -->
+  <div class="profile-card">
+    <h3>My Listings</h3>
+
+    <div class="listing-item">
+      <p>Engineering Mathematics Book</p>
+      <span>₹250</span>
+    </div>
+
+    <div class="listing-item">
+      <p>White Lab Coat</p>
+      <span>₹400</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ===== Footer ===== -->
+<footer>
+  © 2026 Anti-Bookstore
+</
+<script type="module" src="../js/payments.js"></script>
