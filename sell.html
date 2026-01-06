@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sell Item | Anti-Bookstore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2>Anti-Bookstore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="logout.html">Logout</a>
+  </div>
+</nav>
+
+<section class="sell-section">
+  <h1>Sell Your Item</h1>
+
+  <!-- ❌ form tag mat use karo -->
+  <div class="sell-form">
+
+    <label>Title</label>
+    <input type="text" id="title" required>
+
+    <label>Category</label>
+    <select id="category">
+      <option>Textbook</option>
+      <option>Lab Coat</option>
+      <option>Clicker</option>
+    </select>
+
+    <label>Price</label>
+    <input type="number" id="price" required>
+
+    <label>Condition</label>
+    <select id="condition">
+      <option>New</option>
+      <option>Good</option>
+      <option>Used</option>
+    </select>
+
+    <label>Description</label>
+    <textarea id="description"></textarea>
+
+    <label>Seller UPI ID</label>
+    <input type="text" id="upiId" placeholder="example@upi" required>
+
+    <label>Image</label>
+    <input type="file" id="image" accept="image/*">
+
+    <button class="btn" onclick="addProduct()">Post Item</button>
+
+  </div>
+</section>
+
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/sell.js"></script>
+
+</body>
+</html>

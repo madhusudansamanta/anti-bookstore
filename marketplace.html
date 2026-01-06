@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marketplace | Anti-Bookstore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+  <h2>Anti-Bookstore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+
+    <!-- Sell (only logged-in users) -->
+    <a href="sell.html" id="sellLink">Sell</a>
+
+    <!-- Login (only logged-out users) -->
+    <a href="login.html" id="loginLink">Login</a>
+
+    <!-- Logout (only logged-in users) -->
+    <a href="#" id="logoutBtn" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+
+<!-- ===== Page Heading ===== -->
+<section class="page-title">
+  <h1>Marketplace</h1>
+  <p>Buy & sell used items inside your campus</p>
+</section>
+
+<!-- ===== Products will come here ===== -->
+<section class="products" id="productList">
+  <!-- Firebase products auto load here -->
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>© 2026 Anti-Bookstore</p>
+</footer>
+
+<!-- ===== JS Files ===== -->
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/marketplace.js"></script>
+<script type="module" src="../js/authCheck.js"></script>
+<script type="module" src="../js/logout.js"></script>
+
+
+</body>
+</html>

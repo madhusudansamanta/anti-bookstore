@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details | Anti-Bookstore</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar">
+  <h2>Anti-Bookstore</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+
+    <a href="sell.html" id="sellLink">Sell</a>
+    <a href="login.html" id="loginLink">Login</a>
+    <a href="#" id="logoutBtn" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- ===== Product Detail Section ===== -->
+<section class="product-detail">
+
+  <!-- Left -->
+  <div class="product-image">
+    <img id="productImage" alt="Product Image">
+  </div>
+
+  <!-- Right -->
+<div class="product-info">
+  <h1 id="productTitle"></h1>
+  <p class="price" id="productPrice"></p>
+
+  <p><strong>Category:</strong> <span id="productCategory"></span></p>
+  <p><strong>Condition:</strong> <span id="productCondition"></span></p>
+
+  <p class="description" id="productDescription"></p>
+
+  <!-- Contact Seller -->
+  <button class="btn" id="contactSellerBtn">Contact Seller</button>
+
+  <!-- BUY NOW -->
+  <button class="btn" id="buyNowBtn" style="margin-top:10px;">
+    Buy Now
+  </button>
+
+  <!-- 🔥 PAYMENT SECTION -->
+  <div id="upiSection" style="display:none; margin-top:20px;">
+    <h3>Pay via UPI</h3>
+
+    <p><strong>UPI ID:</strong> <span id="sellerUpi"></span></p>
+    <p><strong>Amount:</strong> ₹<span id="upiAmount"></span></p>
+
+    <a id="upiLink" class="btn" target="_blank">
+      Pay Now
+    </a>
+
+    <button class="btn secondary" id="paidBtn">
+      I Have Paid
+    </button>
+
+    <p id="paymentStatus" style="margin-top:10px;"></p>
+  </div>
+</div>
+
+
+    <!-- 🔥 BUY NOW / UPI (hidden by default) -->
+    <!-- 🔥 UPI PAYMENT SECTION -->
+<div id="upiSection" style="display:none; margin-top:20px;">
+
+  <h3>Pay via UPI</h3>
+
+  <p style="color:#d9534f; font-weight:bold;">
+    📱 Open this page on mobile to pay using UPI
+  </p>
+
+  <p>
+    <strong>UPI ID:</strong>
+    <span id="sellerUpi"></span>
+    <button class="btn secondary" onclick="copyUpi()">Copy</button>
+  </p>
+
+  <p>
+    <strong>Amount:</strong> ₹<span id="upiAmount"></span>
+  </p>
+
+  <!-- Pay Now (Mobile Only) -->
+  <a id="upiLink" class="btn" target="_blank">
+    Pay Now (Mobile)
+  </a>
+
+  <!-- QR Code -->
+  <div style="margin-top:15px;">
+    <p>📷 Scan QR using any UPI app</p>
+    <img id="upiQr" alt="UPI QR Code" width="200">
+  </div>
+
+  <!-- Buyer confirmation -->
+  <button class="btn secondary" id="paidBtn" style="margin-top:15px;">
+    I Have Paid
+  </button>
+
+  <p id="paymentStatus" style="margin-top:10px;"></p>
+
+</div>
+
+
+
+</section>
+
+<footer>© 2026 Anti-Bookstore</footer>
+
+<!-- ✅ LOAD SCRIPTS ONLY ONCE -->
+<script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/authCheck.js"></script>
+<script type="module" src="../js/logout.js"></script>
+<script type="module" src="../js/product.js"></script>
+
+</body>
+</html>
